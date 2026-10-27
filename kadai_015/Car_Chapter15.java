@@ -2,18 +2,12 @@ package kadai_015;
 
 public class Car_Chapter15 {
 
-	private int gear;
-	private int speed;
-	
-	public Car_Chapter15(int gear, int speed) {
-		this.gear = gear;
-		this.speed = speed;
-	}
+	private int gear = 1;
+	private int speed = 10;
 	
 	public void changeGear(int afterGear) {
-		if(afterGear == this.gear) {
-			throw new IllegalArgumentException("ギアチェンジできていません");
-		}
+		afterGear = this.gear;
+
 		switch(afterGear){
 			case 1 -> this.speed = 10;
 			case 2 -> this.speed = 20;
